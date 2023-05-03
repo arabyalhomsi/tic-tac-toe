@@ -11,6 +11,10 @@ import { setOwner } from '@ember/application';
 import { Owner } from '@ember/test-helpers/build-owner';
 
 // TODO: try to extract this logic outside the controller
+// What I think is best, especially for bigger applications with more business logic,
+// is to extract all the logic that concerns the TicTacToe to a separate folder. Maybe a lib folder.
+// What I mean by logic is the functions: analyzeBoard, getPlayerTurn, and some of the PlayerMove logic.
+// This is better logic separation and makes testing easier.
 const WINNING_STREAKS = [
   [0, 1, 2],
   [3, 4, 5],
