@@ -1,0 +1,13 @@
+@mixin center-in-page {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin primary-button {
+  background-color: $teritary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5%;
+  color: $font-main-color;
+}

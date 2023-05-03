@@ -1,0 +1,21 @@
+{{page-title "Game"}}
+
+<div class="game">
+  <TicTacToe::Stats
+    @playerx={{this.playerx}}
+    @playero={{this.playero}}
+    @winner={{this.winner}}
+    @draw={{this.draw}}
+    @finished={{this.finished}}
+  />
+
+  <TicTacToe::Container>
+    {{#each this.board as |cell index|}}
+      <TicTacToe::Cell
+        @text={{if cell cell "."}} 
+        @action={{fn this.playerMove index}}
+        @disabled={{this.isButtonDisabled cell}}
+      />
+    {{/each}}
+  </TicTacToe::Container>
+</div>

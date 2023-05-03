@@ -1,0 +1,28 @@
+.new-game {
+  @include center-in-page;
+
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+
+  &__input {
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: $teritary-color;
+    color: $primary-color;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__button {
+    @include primary-button;
+
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+}

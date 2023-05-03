@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  playerx: MyString
+  playero: MyString
+  winner: MyString
+
+two:
+  playerx: MyString
+  playero: MyString
+  winner: MyString

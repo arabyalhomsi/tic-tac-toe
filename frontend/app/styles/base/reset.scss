@@ -1,0 +1,77 @@
+// This file includes css resets and overrides especially for the material design lite library.
+.mdl-navigation__link {
+  font-size: 1rem;
+}
+
+// defaults
+html, body {
+  background-color: $teritary-color;
+  color: $font-main-color;
+}
+
+.mdl-layout__header {
+  background-color: $primary-color;
+
+  // Material design hides the header under 1024px, cancel that.
+  display: block !important; 
+
+  height: auto;
+  padding: 3rem 0;
+
+  &-row {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet) {
+    height: 56px;
+    padding: 0;
+
+    &-row {
+      flex-direction: row;
+      padding: 0 1.3rem 0 6rem;
+    }
+  }
+}
+
+.mdl-button--raised.mdl-button--colored {
+  background-color: $secondary-color;
+  color: $primary-color;
+  border-color: $primary-color;
+  transition: 0s;
+
+  // Cancel hover on non-cursor devices 
+  &:hover {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+    box-shadow: $button-shadow;
+  }
+
+  // Enable hover only on devices with a cursor.
+  @media (hover: hover) {
+    &:hover {
+      // I do not like the use !important. However, because we are using material design lite library,
+      // it is necessary to override all the different rules defined there.
+      background-color: $primary-color !important;
+      color: $secondary-color !important;
+    }
+  }
+
+  // Cancel the default focus from material design lite.
+  // This is because some browsers by default focus the next button after a certain button is clicked.
+  // This causes some weird behavior in our case.
+  &:focus:not(:hover) {
+    background-color: $secondary-color !important;
+    color: $primary-color !important;
+    box-shadow: $button-shadow;
+  }
+}
+
+.mdl-card {
+  background-color: $secondary-color;
+  min-height: 100px;
+}
+
+.mdl-layout-title {
+  font-size: 2.5rem;
+}

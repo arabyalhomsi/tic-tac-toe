@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # game
+  get "/games", to: "games#index"
+  get "/games/:id", to: "games#show"
+  post "/games/create", to: "games#create"
 end

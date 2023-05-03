@@ -1,0 +1,13 @@
+{{page-title "New game"}}
+<div class="new-game mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h4>Player details</h4>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <form {{on 'submit' this.goToGame}}>
+      <Input id="playerx" @type="text" @value={{this.playerxName}} placeholder="Player X" class="new-game__input" />
+      <Input id="playery" @type="text" @value={{this.playeroName}} placeholder="Player O" class="new-game__input" />
+      <input id="submit" type="submit" class="mdl-button new-game__button" value="Play" />
+    </form>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+
+.tic-tac-toe {
+  width: 275px;
+  
+
+  @media (min-width: $desktop) {
+    // Center game horizontally and vertically.
+    @include center-in-page;
+  }
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  &__cell {
+    border-radius: 25%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 2rem;
+    height: auto;
+    width: 7rem;
+    height: 7rem;
+
+    &--disabled {
+      border: 1px solid $primary-color;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  }
+}

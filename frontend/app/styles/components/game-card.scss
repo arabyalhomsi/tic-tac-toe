@@ -1,0 +1,40 @@
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  width: 100%;
+
+  @media (min-width: $laptop) {
+    width: calc(50% - 1.5rem);
+  }
+
+  @media (min-width: $large-screen) {
+    width: calc(25% - 1.5rem);
+  }
+
+  &__players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+
+    h3 {
+      line-height: 2.5rem;
+    }
+  }
+
+  &__versus {
+    font-size: 1.3rem;
+  }
+
+  &__winner {
+    color: $green;
+  }
+
+  &__loser {
+    color: $red;
+  }
+}

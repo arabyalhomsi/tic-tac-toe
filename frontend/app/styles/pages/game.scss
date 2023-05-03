@@ -1,0 +1,15 @@
+.game {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+
+  @media (min-width: $laptop) {
+    flex-direction: row;
+  }
+
+  &__button {
+    @include primary-button;
+  }
+}

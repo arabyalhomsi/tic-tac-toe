@@ -1,0 +1,16 @@
+<div class="stats">
+    <h3>Player X: {{@playerx}}</h3>
+    <h3>Player O: {{@playero}}</h3>
+    
+    {{#if @winner}}
+      <h3>The winner is {{@winner}}</h3>
+    {{/if}}
+
+    {{#if @draw}}
+      <h3>The game is a draw</h3>
+    {{/if}}
+
+    {{#if @finished}}
+      <LinkTo class="mdl-button game__button" @route="index">Home</LinkTo>
+    {{/if}}
+  </div>

@@ -1,0 +1,19 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media (min-width: $laptop) {
+    display: block;
+    margin-left: 10rem;
+    width: 30%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 5rem;
+  }
+
+  h3 {
+    line-height: 3rem;
+  }
+}

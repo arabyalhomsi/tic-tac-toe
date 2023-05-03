@@ -1,0 +1,22 @@
+{{page-title "Game"}}
+
+<div class="game-overview">
+
+  {{#unless @model}}
+  <div class="game-overview__none-message">
+    <h4>No games yet! Why don't you create one?</h4>
+    <p>Use the 'New Game' button top right of this page!</p>
+  </div>
+  {{/unless}}
+
+  {{#each @model as |game|}}
+    <GameCard
+      @playerx={{game.playerx}}
+      @playero={{game.playero}}
+      @winner={{game.winner}}
+      @date={{game.created_at}}
+    />
+  {{/each}}
+</div>
+
+{{outlet}}

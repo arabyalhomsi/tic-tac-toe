@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'frontend',
+    modulePrefix: 'tic-tac-toe',
     environment,
     rootURL: '/',
     locationType: 'history',
