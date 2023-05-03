@@ -9,6 +9,7 @@ A place where you and your friends can play Tic-Tac-Toe and see the history.
 
 - Inside `frontend`, run the following commands:
   - `npm install`
+  - `npm run test`
   - `npm run start`
 - Inside `backend`, run the following commands:
   - `bundle install`
