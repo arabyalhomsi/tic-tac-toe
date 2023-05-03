@@ -21,7 +21,7 @@ Check this link for all the changes I added: [diff](https://github.com/arabyalho
   - `rails db:migrate`
   - `rails server`
 
-  ## Reflection
+## Reflection
 
 - How was it to get started
 
