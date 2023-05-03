@@ -2,6 +2,10 @@
 
 A place where you and your friends can play Tic-Tac-Toe and see the history.
 
+## Review
+
+check this link for all the changes I added: [diff](https://github.com/arabyalhomsi/tic-tac-toe/compare/main...feedbackfruits)
+
 ## How to run the app
 
 - clone the project
